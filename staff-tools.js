@@ -6,7 +6,7 @@ var hireNewHandyman = function () {
     const args = {
         autoPosition: true,
         staffType: 0, // 0: handyman, 1: mechanic, 2: security, 3: entertainer
-        entertainerType: 0,
+        costumeIndex: 0,
         staffOrders: (1 << 0) | (1 << 2) // Set the handyman to sweep and empty bins. See STAFF_ORDERS in openrct2/entity/Staff.h
     };
 
@@ -29,8 +29,9 @@ var main = function () {
 
 registerPlugin({
     name: 'Staff Tools',
-    version: '1.0',
+    version: '1.0.1',
     authors: ['OpenRCT2'],
+    licence: 'MIT',
     type: 'remote',
     main: main
 });
