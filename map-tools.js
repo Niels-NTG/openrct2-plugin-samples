@@ -8,7 +8,6 @@ var destroyAllFootpathItems = function() {
             var tile = map.getTile(x, y);
 
             // Iterate every element on the tile
-            // console.log(tile)
             for (var i = 0; i < tile.numElements; i++) {
                 var element = tile.getElement(i);
 
