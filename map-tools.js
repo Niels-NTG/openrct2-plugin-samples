@@ -8,6 +8,7 @@ var destroyAllFootpathItems = function() {
             var tile = map.getTile(x, y);
 
             // Iterate every element on the tile
+            // console.log(tile)
             for (var i = 0; i < tile.numElements; i++) {
                 var element = tile.getElement(i);
 
@@ -35,15 +36,16 @@ var main = function() {
     };
 
     // Add a menu item under the map icon on the top toolbar
-    ui.registerMenuItem("Destroy all footpaths", function() {
+    ui.registerMenuItem("Vandalise all footpath items", function() {
         destroyAllFootpathItems();
     });
 };
 
 registerPlugin({
     name: 'Map Tools',
-    version: '1.0',
+    version: '1.0.1',
     authors: ['OpenRCT2'],
+    licence: 'MIT',
     type: 'remote',
     main: main
 });
